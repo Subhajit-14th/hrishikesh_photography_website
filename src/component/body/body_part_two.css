@@ -1,0 +1,30 @@
+.hero-container-part-two {
+  background-color: #f8f4ee;
+  padding: 40px 0;
+  text-align: center;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.image-grid-swiper {
+  position: relative;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.image-grid-swiper img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}

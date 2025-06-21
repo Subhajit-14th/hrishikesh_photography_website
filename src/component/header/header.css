@@ -1,0 +1,45 @@
+.header {
+  background-color: #faf6f0;
+  padding: 40px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.nav-left,
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-top: 6px;
+  font-family: Georgia, serif;
+}
