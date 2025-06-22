@@ -1,55 +1,71 @@
+/* === Hero container === */
 .hero-container {
   background-color: #f8f4ee;
-  padding: 40px 0;
+  padding: 40px 16px;
   text-align: center;
   color: #333;
   font-family: "Montserrat", sans-serif;
 }
 
+/* === Swiper wrapper === */
 .hero-image {
   position: relative;
-  max-width: 55%;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
+/* === Swiper image styling === */
 .hero-image img {
   width: 100%;
-  border-radius: 0px;
+  height: auto;
+  object-fit: cover; /* Use 'contain' if you want full image without cropping */
+  display: block;
+  border-radius: 0;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  font-size: 32px;
-  color: #fff;
-  cursor: pointer;
-  transform: translateY(-50%);
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 0%;
-  user-select: none;
+.hero-image .swiper {
+  position: relative;
 }
 
-.arrow.left {
-  left: 0px;
-}
-
-.arrow.right {
-  right: 0px;
-}
-
-/* Swiper navigation buttons */
+/* === Base arrow styling (desktop) === */
 .swiper-button-next,
 .swiper-button-prev {
+  position: absolute;
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
-  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 4px;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
+/* Add margin so arrows don't touch the edge */
+.swiper-button-prev {
+  left: 10px !important;
+}
+.swiper-button-next {
+  right: 10px !important;
+}
+
+/* === Arrow icons (::after) === */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+
+/* === Text section === */
 .hero-text {
   margin-top: 40px;
   color: #444;
+  padding: 0 16px;
 }
 
 .hero-text h2 {
@@ -75,4 +91,86 @@
   color: #000;
   text-align: center;
   margin-top: 80px;
+}
+
+/* === Responsive Tweaks === */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .swiper-button-prev {
+    left: 8px !important;
+  }
+
+  .swiper-button-next {
+    right: 8px !important;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 18px !important;
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 16px !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 6px 8px !important;
+  }
+
+  .swiper-button-prev {
+    left: 6px !important;
+  }
+
+  .swiper-button-next {
+    right: 6px !important;
+  }
+}
+
+/* Very small screens (like iPhone SE, 320px–375px) */
+@media (max-width: 375px) {
+  .hero-text h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 10px !important;
+    width: 26px !important;
+    height: 30px !important;
+  }
+
+  .swiper-button-prev {
+    left: 6px !important;
+  }
+
+  .swiper-button-next {
+    right: 6px !important;
+  }
 }

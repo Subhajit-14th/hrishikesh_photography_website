@@ -1,30 +1,33 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "./body_part_one.css";
 
-// Import your images
+// Images
 import bimg1 from "../../assets/headerBanner/imageOne.jpg";
 import bimg2 from "../../assets/headerBanner/imageTwo.jpg";
 import bimg3 from "../../assets/headerBanner/imageThree.jpg";
 import bimg4 from "../../assets/headerBanner/imageFour.jpg";
 
-// Add more images to match your design
 const images = [bimg3, bimg1, bimg2, bimg4];
 
 function Body() {
   return (
     <div className="hero-container">
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay, EffectFade]}
         navigation
         loop={true}
         autoplay={{
-          delay: 3000, // 3 seconds
-          disableOnInteraction: false, // Keeps autoplay after user interaction
+          delay: 3000,
+          disableOnInteraction: false,
         }}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        speed={2000}
         className="hero-image"
         spaceBetween={0}
       >
