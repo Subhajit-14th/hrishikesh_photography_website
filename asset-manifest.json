@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hrishikesh_photography_website/static/css/main.0b3f0ec9.css",
+    "main.js": "/hrishikesh_photography_website/static/js/main.fd742fbc.js",
+    "static/js/453.984ffd83.chunk.js": "/hrishikesh_photography_website/static/js/453.984ffd83.chunk.js",
+    "static/media/imageFive.jpg": "/hrishikesh_photography_website/static/media/imageFive.2ce274d89fc6942ddb5f.jpg",
+    "static/media/IMG_4455.jpeg.jpg": "/hrishikesh_photography_website/static/media/IMG_4455.jpeg.fd0a45965e7c25337a05.jpg",
+    "static/media/imageThree.jpg": "/hrishikesh_photography_website/static/media/imageThree.76156e951bbbf891052b.jpg",
+    "static/media/imageFour.jpg": "/hrishikesh_photography_website/static/media/imageFour.841230a32900dca4709c.jpg",
+    "static/media/imageTwo.jpg": "/hrishikesh_photography_website/static/media/imageTwo.597cca0ff3f4296b6a98.jpg",
+    "static/media/imageOne.jpg": "/hrishikesh_photography_website/static/media/imageOne.1fc6416bce80e80fbf87.jpg",
+    "static/media/logo.png": "/hrishikesh_photography_website/static/media/logo.c9eed9344f1f4e5d44a5.png",
+    "static/media/hotc_logo.png": "/hrishikesh_photography_website/static/media/hotc_logo.42c2168b99f0c503011e.png",
+    "index.html": "/hrishikesh_photography_website/index.html",
+    "main.0b3f0ec9.css.map": "/hrishikesh_photography_website/static/css/main.0b3f0ec9.css.map",
+    "main.fd742fbc.js.map": "/hrishikesh_photography_website/static/js/main.fd742fbc.js.map",
+    "453.984ffd83.chunk.js.map": "/hrishikesh_photography_website/static/js/453.984ffd83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b3f0ec9.css",
+    "static/js/main.fd742fbc.js"
+  ]
+}

@@ -7,7 +7,8 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-column left">
-        <img src={logo} alt="HOTC Logo" className="footer-logo" />
+        {/* <img src={logo} alt="HOTC Logo" className="footer-logo" /> */}
+        <p className="footer-logo">WEDDING PHOTO STATION</p>
         <div className="footer-icons">
           <FaInstagram />
           <FaFacebookF />
@@ -15,7 +16,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-column center">
-        <p>Bankura . West Bengal</p>
+        <p>Kolkata . West Bengal</p>
         <p>Privacy Policy</p>
       </div>
       <div className="footer-column right">

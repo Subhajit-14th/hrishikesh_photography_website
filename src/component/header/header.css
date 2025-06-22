@@ -33,13 +33,19 @@
   text-align: center;
 }
 
-.logo img {
+/* .logo img {
   height: 40px;
-}
+} */
 
-.logo p {
-  font-size: 12px;
+.logo-heading {
+  font-size: 16px;
   letter-spacing: 4px;
   margin-top: 6px;
+  font-family: Georgia, serif;
+}
+
+.sub-logo-name {
+  font-size: 12px;
+  letter-spacing: 4px;
   font-family: Georgia, serif;
 }
