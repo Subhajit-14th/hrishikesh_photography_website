@@ -95,6 +95,12 @@
 
 /* === Responsive Tweaks === */
 
+@media (max-width: 1280px) {
+  .hero-image .swiper {
+    max-width: 60%;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .hero-text h2 {

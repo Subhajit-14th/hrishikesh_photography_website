@@ -35,12 +35,14 @@ function BodyPartTwo() {
 
       <div className="hero-text">
         <h2>"YOU FEEL. I FOCUS. WE FRAME"</h2>
-        <p>
+        <p className="hero-body-text-two">
           A wedding is a validation coupled with the showcase of love inclusive
-          of various events with exotic venues, food, guests, dresses, jewellery
-          and so on — What if it could never be recorded?
+          of <br />
+          various events with exotic venues, food, guests, dresses, jewellery
+          and so on — <br />
+          What if it could never be recorded?
         </p>
-        <p>
+        <p className="hero-body-text-three">
           A chronology of a couple's journey where they vow together to be{" "}
           <span className="highlight">One</span>.
         </p>

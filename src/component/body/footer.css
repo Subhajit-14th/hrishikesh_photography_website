@@ -12,6 +12,8 @@
 .footer-column {
   flex: 1;
   min-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .footer-logo {
@@ -24,6 +26,7 @@
   display: flex;
   gap: 15px;
   margin-top: 10px;
+  justify-content: flex-start;
 }
 
 .footer-icons svg {
@@ -55,7 +58,6 @@
   text-decoration: underline;
 }
 
-/* ✅ Responsive */
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -66,13 +68,22 @@
 
   .footer-column {
     margin-bottom: 20px;
-  }
-
-  .footer-column.right {
+    width: 100%;
     text-align: center;
   }
 
+  .footer-column.right,
+  .footer-column.left,
   .footer-column.center {
-    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+
+  .footer-icons {
+    justify-content: center;
   }
 }
